@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">RecipeSite</div>
+        <ul>
+            <li><button onclick="location.href='#home'" class="nav-button">Home</button></li>
+                <li><button onclick="location.href='#recipes'" class="nav-button">Recipes</button></li>
+                <li><button onclick="location.href='#contact'" class="nav-button">Contact</button></li>
+              </ul>
+    </nav>
+
+    <section id="home" style="display: block;">
+        <h1>Welcome to RecipeSite</h1>
+        <p>Your one-stop destination for delicious recipes.</p>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search recipes...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+    </section>
+    
+    <main id="recipes" style="display: block;">
+        <div class="recipe-container">
+            <h2>Recipes</h2>
+            <div class="recipe-card">
+                <img src="image 1 rp.jpg" alt="Beef Tacos">
+                <h3>Ingredients: Rice, Chicken, Spices, Yogurt</h3>
+                <p class="menu-info">Delicious and easy to make.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="coffee.jpg" alt="Caesar Salad">
+                <h3>Ingredients: Romaine Lettuce, Croutons, Caesar Dressing, Parmesan Cheese</h3>
+            </div>
+            <div class="recipe-card">
+                <img src="Chole-Bhature.jpg" alt="Chicken Alfredo">
+                <h3>Ingredients: Fettuccine, Chicken, Alfredo Sauce, Parmesan Cheese</h3>
+            </div>
+            <div class="recipe-card">
+                <img src="Chicken Curry.jpg" alt="Chicken Curry">
+                <h3>Ingredients: Chicken, Curry Powder, Coconut Milk, Onions, Garlic</h3>
+            </div>
+            <div class="recipe-card">
+                <img src="Chicken pakora.jpg" alt="Chocolate Cake">
+                <h3>Ingredients: Flour, Cocoa Powder, Sugar, Eggs, Butter</h3>
+            </div>
+            <div class="recipe-card">
+                <img src="chicken-fry.jpg" alt="Fruit Salad">
+                <h3>Ingredients: Mixed Fruits, Honey, Lemon Juice</h3>
+            </div>
+            <div class="recipe-card">
+                <img src="veg-burger.jpg" alt="Grilled Cheese Sandwich">
+                <h3>Ingredients: Bread, Cheese, Butter</h3>
+                <p class="menu-info">Crispy and cheesy.</p>
+            </div>
+
+    <section id="contact" style="display: none;">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-info">
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@recipesite.com</p>
+            <p>Address: 123 Main St, Anytown, USA</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 RecipeSite. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
